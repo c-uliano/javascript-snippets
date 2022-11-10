@@ -68,4 +68,5 @@ main img {
 .main_img {
     margin-bottom: 15px;
     box-shadow: 0 0 12px gray;
+    object-fit: cover;
 }
