@@ -1,8 +1,8 @@
-// setInterval to change from one large image to the next
+// setInterval to change from one image to the next
 
-var mainImg = document.querySelector(".main_img");
+var caroEl = document.querySelector(".carousel_img");
 
-var shoeImages = [
+var caroImgs = [
     'images/nikes.jpg',
     'images/shoes.jpg',
     'images/blue-shoes.jpg'
@@ -11,11 +11,11 @@ var shoeImages = [
 var index = 0;
 
 function changeImage() {
-    mainImg.src = shoeImages[index];
+    caroEl.src = caroImgs[index];
     index++;
-    if (index == shoeImages.length) {
+    if (index == caroImgs.length) {
         index = 0;
     }
 }
 
-setInterval(changeImage, 2000);
+setInterval(changeImage, 2500);
